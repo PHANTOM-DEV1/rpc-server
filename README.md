@@ -1,4 +1,4 @@
-![ARK-RPC](https://cdn-images-1.medium.com/max/2000/1*QFNTgOOP_9NIaNwIrBnp_w.png)
+![PHANTOM-RPC](https://i.imgur.com/nLiDiqb.jpg)
 
 ### RPC server implementation to easily connect to ARK blockchain
 
