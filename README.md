@@ -3,9 +3,9 @@
 ### RPC server implementation to easily connect to PHANTOM blockchain
 
 # Security Warning
-All calls should be made from the server where RPC is running at ( i.e., `localhost` or `127.0.0.1` ). The RPC server should never be publicly accessible. If you wish to access ark-rpc from a remote address, you can whitelist the address with `--allow <address>`. Addresses allow you to use wildcards, eg. `192.168.1.*` or `10.0.*.*`.
+All calls should be made from the server where RPC is running at ( i.e., `localhost` or `127.0.0.1` ). The RPC server should never be publicly accessible. If you wish to access phantom-rpc from a remote address, you can whitelist the address with `--allow <address>`. Addresses allow you to use wildcards, eg. `192.168.1.*` or `10.0.*.*`.
 
-If you do want to allow access from all remotes, start ark-rpc with the `--allow-remote` commandline switch. This can be dangerous.
+If you do want to allow access from all remotes, start phantom-rpc with the `--allow-remote` commandline switch. This can be dangerous.
 
 # How To Use It
 - install Node.JS ( https://nodejs.org/en/download/package-manager/)
@@ -16,11 +16,11 @@ If you do want to allow access from all remotes, start ark-rpc with the `--allow
 ## Docker ##
 If you would like to run from a docker environment, you will first need to build the container by running:
 ```
-docker build -t ark-rpc .
+docker build -t phantom-rpc .
 ```
 You will need to run the container with the `--allow-remote` option to allow the host machine to access the container.
 ```
-docker run -d -p 8080:8080 ark-rpc --allow-remote
+docker run -d -p 8080:8080 phantom-rpc --allow-remote
 ```
 
 # API
