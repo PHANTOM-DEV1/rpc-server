@@ -8,9 +8,10 @@ All calls should be made from the server where RPC is running at ( i.e., `localh
 If you do want to allow access from all remotes, start phantom-rpc with the `--allow-remote` commandline switch. This can be dangerous.
 
 # How To Use It
+- git clone ( https://github.com/PhantomCore/rpc-server )
 - install Node.JS ( https://nodejs.org/en/download/package-manager/)
 - install forever `npm install -g forever`
-- install phantom-rpc: `npm install phantomcore/phantom-rpc#master`
+- install phantom-rpc: `npm install -g`
 - start RPC server: `phantom-rpc --port 8000` (default port is 8080)
 
 ## Docker ##
