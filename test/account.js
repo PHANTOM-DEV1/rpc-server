@@ -2,7 +2,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const server = require('../server');
-const arkjs = require('arkjs');
+const phantomjs = require('phantomjs');
 const bip39 = require('bip39');
 
 chai.should();
@@ -35,7 +35,7 @@ describe('Accounts', () => {
 
     // it('STRESSTEST: it should GET 50000 accounts on devnet', (done) => {
     //   for(var i=0; i<50000; i++){
-    //     var address = arkjs.crypto.getKeys(bip39.generateMnemonic()).getAddress();
+    //     var address = phantomjs.crypto.getKeys(bip39.generateMnemonic()).getAddress();
     //     chai.request(server).
     //     get('/devnet/account/'+address).
     //     end((err, res) => {
@@ -113,7 +113,7 @@ describe('Accounts', () => {
         res.should.have.status(200);
         res.body.success.should.be.equal(true);
         res.body.transaction.recipientId.should.equal("AUDud8tvyVZa67p3QY7XPRUTjRGnWQQ9Xv");
-        arkjs.crypto.verify(res.body.transaction).should.be.equal(true);
+        phantomjs.crypto.verify(res.body.transaction).should.be.equal(true);
         done();
       });
     });

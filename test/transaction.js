@@ -3,7 +3,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const server = require('../server');
-const arkjs = require('arkjs');
+const phantomjs = require('phantomjs');
 chai.should();
 
 chai.use(chaiHttp);
@@ -52,7 +52,7 @@ describe('Transactions', () => {
           res.body.success.should.be.equal(true);
           res.body.transaction.recipientId.should.equal("AUDud8tvyVZa67p3QY7XPRUTjRGnWQQ9Xv");
           mainnettx = res.body.transaction;
-          arkjs.crypto.verify(mainnettx).should.be.equal(true);
+          phantomjs.crypto.verify(mainnettx).should.be.equal(true);
           done();
         });
     });
@@ -82,7 +82,7 @@ describe('Transactions', () => {
           res.body.success.should.be.equal(true);
           res.body.transaction.recipientId.should.equal("DGihocTkwDygiFvmg6aG8jThYTic47GzU9");
           devnettx = res.body.transaction;
-          arkjs.crypto.verify(devnettx).should.be.equal(true);
+          phantomjs.crypto.verify(devnettx).should.be.equal(true);
           done();
         });
     });

@@ -1,32 +1,32 @@
 {
-  "name": "ark-rpc",
+  "name": "phantom-rpc",
   "version": "1.0.0",
-  "description": "RPC server acting as lite client for ARK blockchain",
+  "description": "RPC server acting as lite client for PHANTOM blockchain",
   "main": "server.js",
   "scripts": {
     "test": "mocha",
     "start": "nodemon ./server.js"
   },
   "bin": {
-    "ark-rpc": "./server.js"
+    "phantom-rpc": "./server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arkecosystem/ark-rpc.git"
+    "url": "git+https://github.com/phantomcore/phantom-rpc.git"
   },
   "keywords": [
-    "ark",
+    "phantom",
     "blockchain",
     "rpc"
   ],
   "author": "fx thoorens",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arkecosystem/ark-rpc/issues"
+    "url": "https://github.com/phantomcore/phantom-rpc/issues"
   },
-  "homepage": "https://github.com/arkecosystem/ark-rpc#readme",
+  "homepage": "https://github.com/phantomcore/phantom-rpc#readme",
   "dependencies": {
-    "arkjs": "github:arkecosystem/ark-js#master",
+    "phantomjs": "github:phantomcore/phantom-js#master",
     "async": "^2.6.0",
     "bigi": "^1.4.2",
     "bip38": "^2.0.2",
