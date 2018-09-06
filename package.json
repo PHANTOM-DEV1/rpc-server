@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/phantomcore/phantom-rpc#readme",
   "dependencies": {
-    "phantomjs": "github:phantomcore/phantom-js#master",
+    "phantomjscore": "^0.2.1",
     "async": "^2.6.0",
     "bigi": "^1.4.2",
     "bip38": "^2.0.2",
