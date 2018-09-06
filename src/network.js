@@ -1,6 +1,6 @@
 var request = require('request');
 var async = require('async');
-var phantomjs = require('phantomjs');
+var phantomjs = require('phantomjscore');
 
 var network = null,
   server = null;

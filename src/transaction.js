@@ -1,4 +1,4 @@
-var phantomjs = require('phantomjs');
+var phantomjs = require('phantomjscore');
 var account = require('./account');
 var network = require('./network');
 var leveldb = require('./leveldb');

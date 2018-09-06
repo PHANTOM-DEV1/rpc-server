@@ -1,4 +1,4 @@
-var phantomjs = require('phantomjs');
+var phantomjs = require('phantomjscore');
 var bip39 = require('bip39');
 var bip38 = require('bip38');
 var BigInteger = require('bigi');

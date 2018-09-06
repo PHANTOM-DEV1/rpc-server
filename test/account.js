@@ -2,7 +2,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const server = require('../server');
-const phantomjs = require('phantomjs');
+const phantomjs = require('phantomjscore');
 const bip39 = require('bip39');
 
 chai.should();
